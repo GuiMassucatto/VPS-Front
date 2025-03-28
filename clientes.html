@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <header>
+        <h1>IPlast</h1>
+    </header>
+    <main>
+        <container class="cadastro">
+            <button id="abrirModal">Novo Cliente</button>
+        </container>
+        <div id="Modal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Cliente</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="number" placeholder="CPF" name="cpf">
+                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Logradouro" name="logradouro">
+                <input type="submit" value="Cadastrar">
+            </div>
+    </main>
+
+    <table class="clientes-table">
+        <thead>
+            <tr>
+                <th>Clientes</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Logradouro</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>12345678901</td>
+                <td>joao@gmail.com</td>
+                <td>Rua das Palmeiras, 77</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Gilmar</td>
+                <td>98765432102</td>
+                <td>gilmar@gmail.com</td>
+                <td>Rua da Loucura, 69</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+<footer>
+    <p>Desenvolvido por Guilherme Massucatto</p>
+</footer>
+<script src="./js/script.js"></script>
+</html>

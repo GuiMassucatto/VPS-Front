@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>IPlast</h1>
+    </header>
+    <main>
+        <container class="cadastro">
+            <button id="abrirModal">Novo Produto</button>
+        </container>
+        <div id="Modal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <h3>Cadastre um Produto</h3>
+                <input type="text" placeholder="Nome" name="nome">
+                <input type="text" placeholder="Descrição" name="descricao">
+                <input type="number" placeholder="Valor de Custo" name="valorcusto">
+                <input type="number" placeholder="Valor de Venda" name="valorvenda">
+                <input type="submit" value="Cadastrar">
+            </div>
+    </main>
+
+    <table class="produtos-table">
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Descrição</th>
+                <th>Valor de Custo</th>
+                <th>Valor de Venda</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prato</td>
+                <td>Pratos feito de plástico</td>
+                <td>R$5.00</td>
+                <td>R$10.00</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Pote</td>
+                <td>Potes feito de plástico</td>
+                <td>R$20.00</td>
+                <td>R$40.00</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="excluir">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+<footer>
+    <p>Desenvolvido por Guilherme Massucatto</p>
+</footer>
+<script src="./js/script.js"></script>
+</html>
