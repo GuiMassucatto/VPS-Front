@@ -54,10 +54,10 @@ button{
 }
 
 .modal-conteudo {
-    background-color: #fff;
+    background-color: #2D3A3A;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid black;
     width: 80%;
     max-width: 400px;
     text-align: center;
@@ -67,6 +67,10 @@ button{
         width: 90%;
         padding: 1vw;
         margin-top: 1vw;
+    }
+
+    & h3{
+        color: white;
     }
 }
 
